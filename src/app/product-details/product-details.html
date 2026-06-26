@@ -1,0 +1,45 @@
+<div
+  class="container mt-5"
+  *ngIf="product">
+
+  <div class="row align-items-center">
+
+    <div class="col-lg-6 text-center">
+
+      <img
+        [src]="product.image"
+        class="product-image">
+
+    </div>
+
+    <div class="col-lg-6">
+
+      <h1 class="product-title">
+
+        {{ product.title }}
+
+      </h1>
+
+      <p class="product-description">
+
+        {{ product.description }}
+
+      </p>
+
+      <h2 class="product-price">
+
+        {{ product.price | currency }}
+
+      </h2>
+
+      <button class="btn btn-outline-danger btn-lg mt-3">
+
+        Add To Cart
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
